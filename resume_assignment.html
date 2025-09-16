@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0;
+        }
+        .main-background {
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .main-container {
+            width: 70rem;
+            height: fit-content;
+            background-color: white;
+            border-color: black;
+            border-style: solid;
+            border-radius: 10% 10% 10% 10%;
+            margin: 1rem 0rem 1rem 0rem;
+            padding: 2rem 2rem 2rem 2rem;
+            
+        }
+
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            border-style: solid;
+            border-color: white white darkgray white;
+            padding: 0rem 0rem 1rem 0rem;;
+
+        }
+
+        .header-container-name {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .header-contact-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 60vw;
+            align-items: center;
+        }
+
+        .contact-email, .contact-github {
+            text-decoration: none;   
+            color: inherit;
+            text-align: center;
+             line-height: 1;   
+        }
+
+        .contact-linkedin {
+            text-decoration: none;   
+            color: inherit;
+            text-align: center;
+            line-height: 1;   
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .bottom-container {
+            display: grid;
+            grid-template-columns: 20% 80%;
+            margin-top: 1.5rem;
+        }
+
+        .left-container {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+        }
+        
+
+        .demographic-container, .skills-container {
+            width: 10rem;
+            margin-bottom: 1.5rem;
+            
+        }
+
+        .education-container, .projects-container {
+            width: 55rem;
+            margin-bottom: 1.5rem;
+            
+        }
+        
+        .table-education {
+            width: 100%;    
+        }
+
+        th, td {
+            text-align: left;
+    }
+
+        .common-header {
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-bottom: 2px solid black;
+            margin-bottom: 0.5rem;
+            top: 0rem;
+        
+        }
+        
+        .experience {
+            margin-bottom: 1.5rem;
+        }
+
+        .skills-languages, .skills-domain {
+            margin-top: 0.5rem;
+        }
+
+        .experience-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+
+        }
+
+
+
+    </style>
+    
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    
+    <img src="shiro_image.jpg" height="40" width="40" alt="Shiro Logo" style="border-radius:50%">
+    <a class="navbar-brand" href="./home.html" style="margin-left:10px;">Gaurav's Blog
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./resume_assignment.html">About me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sign-in</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <section class="main-background">
+        <section class = "main-container">
+            <section class="header-container">
+                <section class = "header-container-name">Gaurav Sirola</section>
+                <section class="header-contact-container">
+                    <a class="contact-phone">☎ +91-882-649-9259</a>
+                    <a href="mailto:gauravsirola@gmail.com" class="contact-email">✉ gauravsirola@gmail.com</a>
+                    <a href="https://github.com/gauravsirola" class="contact-github" target="_blank">
+                        <i class='fa fa-github'></i> Github
+                    </a>
+                    <a href="https://www.linkedin.com/in/gauravsirola95/" class="contact-linkedin" target="_blank">
+                        <img src="linkedin-logo.png" alt="Linkedin" width="19" height="19"> Linkedin
+                    </a>
+                </section>
+            </section>
+            <section class = "bottom-container">
+                <section class = "left-container">
+                    <section class = "demographic-container">
+                        <section class="common-header">Address</section>
+                        <section>D-1/5, Himalaya Pride, Techzone - 4, Greater Noida West, Uttar Pradesh, Pincode: 201306</section>
+                    </section>
+
+                    <section class = "skills-container">
+                        <section class="common-header">Skills</section>
+                        <section class="skills-languages">Languages
+                            <ul>
+                                <li>Python</li>
+                                <li>SQL</li>
+                                <li>R</li>
+                                <li>SAS</li>
+                            </ul>
+                        </section>
+                        <section class="skills-domain">Frameworks/Domain
+                            <ul>
+                                <li>Machine Learning</li>
+                                <li>Time Series Forecasting</li>
+                                <li>Generative AI</li>
+                                <li>Finetuning LLMs</li>
+                                <li>LangGraph/Autogen</li>
+                            </ul>
+                        </section>
+                    </section>
+                </section>
+
+                <section class = "right-container">
+                    <section class = "education-container">
+                        <section class="common-header">Education</section>
+                        <table class = "education-table">
+                            <tr>
+                                <th style="width: 11rem;">Degree</th>
+                                <th style="width: 44rem;">Institution</th>
+                                <th style="width: 11rem;">Duration</th>
+                                <th style="width: 11rem;"></th>
+                                <th style="width: 11rem;">Result</th>
+                            </tr>
+                            <tr>
+                                <td>SSC</td>
+                                <td>KV Sainik Vihar</td>
+                                <td>2010-2011</td>
+                                <td></td>
+                                <td>8.2 CGPA</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>HSC</td>
+                                <td>KV Sainik Vihar</td>
+                                <td>2012-2013</td>
+                                <td></td>
+                                <td>89 %</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>B.Tech</td>
+                                <td>Delhi Technological University</td>
+                                <td>2013-2017</td>
+                                <td></td>
+                                <td>67.75%</td>
+                            </tr>
+                        </table>
+                    </section>
+                    
+                    <section class = "projects-container">
+                        <section class="common-header">Experience</section>
+                        <section class="experience-container">
+                            <section class="experience">
+                                <section class="experience-header">
+                                    <section>EXL Service: Senior Consultant</section> 
+                                    <section>(January 2022 - Present)</section>
+                                </section>
+                                <ul>
+                                    <li>Current Role: Creating Gen AI based solution related to Code/Data Migration based projects</li>
+                                    <li>Projects:
+                                        <ul>
+                                            <li>Data Harbor[POC]: Extracting Data Lineage from SSIS/DataStage/Alteryx generated XMLs for Data Governance</li>
+                                            <li>Code Harbor[POC]: Converting SAS code base into Python code using smart context based conversion and iterative debugging.</li>
+                                            <li>Injury Claim Prediction: Framework for estimating likelihood of injury claim based on the available information in the system.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="experience">
+                                <section class="experience-header">
+                                    <section>Citibank: Specialized Analytics Analyst </section>
+                                    <section>(January 2020 - December 2021)</section>
+                                </section>
+                                <ul>
+                                    <li>Role: Part of Digital Modelling Team and built ML based models for catering US market solutions.</li>
+                                    <li>Projects:
+                                        <ul>
+                                            <li>Traffic Model Framework: Framework to dynamically decide ads domain selection for customer visiting the website.</li>
+                                            <li>Customer Profiling Analysis: Analyzed customer profiles visiting different citi websites to create better strategy related to customer engagement.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="experience">
+                                <section class="experience-header">
+                                    <section>Impact Analytics: Data Scientist </section>
+                                    <section>(August 2018 - December 2019)</section>
+                                </section>
+                                <ul>
+                                    <li>Role: Worked as a Data Scientist for clients in the retail domain, building forecasting models and analytics frameworks to drive revenue planning and assortment strategies.</li>
+                                    <li>Projects:
+                                        <ul>
+                                            <li>Revenue Forecasting Model: Developed a daily revenue forecasting model for offline stores using time series data and event flags, integrating XGBoost with decomposition to achieve ~70% accuracy.</li>
+                                            <li>Apparel Assortment Framework: Built a Python (Scrapy) framework to web-scrape e-commerce data, analyzing product trends to deliver insights for inventory and assortment decisions.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="experience">
+                                <section class="experience-header">
+                                    <section>Impact Analytics: Data Science Intern </section>
+                                    <section>(May 2018 - July 2018)</section>
+                                </section>
+                                <ul>
+                                    <li>Role: Kick-started career as a Data Science Intern, focusing on understanding business requirements and delivering actionable solutions.</li>
+                                    <li>Projects:
+                                        <ul>
+                                            <li>Inventory Replenishment Tool: Managed an inventory tool for a leading US jewelry retailer, ensuring optimal stock levels and accurate inventory planning.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="experience">
+                                <section class="experience-header">
+                                    <section>Dr. Reddy's Laboratories: Technical Trainee </section>
+                                    <section>(June 2017 - April 2018)</section>
+                                </section>
+                                <ul>
+                                    <li>Role: Joined as a campus hire and began career as an Environmental Engineer, contributing to sustainable operations by optimizing industrial sewage treatment processes.</li>
+                                    <li>Projects:
+                                        <ul>
+                                            <li>Zero Liquid Discharge Plant: Analyzed daily operations of an industrial sewage treatment plant, identified gaps, and proposed solutions to enhance efficiency and sustainability.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
